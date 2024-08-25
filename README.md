@@ -5,3 +5,4 @@ Data Center: https://aws.amazon.com/what-is/data-center/
 Global infrastructure: https://aws.amazon.com/about-aws/global-infrastructure/
 Shared responsibility model: https://aws.amazon.com/compliance/shared-responsibility-model/
 
+AWS IAM: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#securing_access-keys
