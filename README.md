@@ -7,3 +7,6 @@ Shared responsibility model: https://aws.amazon.com/compliance/shared-responsibi
 
 AWS IAM: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#securing_access-keys
 AWS Root users: https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-tasks.html
+
+Project:
+https://github.com/iampsrv/aws-flask
