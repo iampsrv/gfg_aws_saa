@@ -1,0 +1,10 @@
+aws lambda create-function --function-name SimpleLambda --runtime python3.8 --role arn:aws:iam::686766985335:role/lambda_role --handler lambda_function.lambda_handler --zip-file fileb://function.zip
+
+
+
+
+psql -h database-1.cheiq4ww2uv0.us-west-2.rds.amazonaws.com -U postgres -d mydb -p 5432
+
+aws lambda update-function-configuration --function-name TestCrudLambda --environment "Variables={DB_HOST=database-1.cheiq4ww2uv0.us-west-2.rds.amazonaws.com,DB_NAME=postgres,DB_USER=postgres,DB_PASSWORD=pranjal#123,DB_PORT=5432}"
+
+

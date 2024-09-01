@@ -1,0 +1,6 @@
+VPC (Society)
+IGW (Entrance gate)
+Routing Table (Guard)
+Subnet (Apartment)
+Ec2 instance (Flat)
+Application (You)

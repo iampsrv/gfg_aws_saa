@@ -1,0 +1,6 @@
+Amazon Web Services (AWS) reserves the first four IP addresses and the last IP address in every subnet for IP networking purposes. These IP addresses are not available for use. 
+Here are some other IP addresses reserved by AWS:
+10.0.0.1: Reserved for the VPC router
+10.0.0.2: Reserved for DNS
+10.0.0.3: Reserved for future use
+10.0.0.255: Reserved for network broadcast, even though broadcast is not supported in VPC 
