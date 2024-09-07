@@ -13,3 +13,6 @@ https://github.com/iampsrv/aws-flask
 
 
 EC2 instance type: https://aws.amazon.com/ec2/instance-types/
+
+
+S3 storage class pricing: https://aws.amazon.com/s3/pricing/
