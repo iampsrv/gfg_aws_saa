@@ -1,0 +1,9 @@
+1. Fetch a Metadata Token:
+   Inside the pod, attempt to fetch a metadata token using the following command:
+   
+   TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+   
+2. Retrieve the Instance ID:
+   With the token, attempt to retrieve the instance ID:
+   
+   curl -H "X-aws-ec2-metadata-token: $TOKEN" "http://169.254.169.254/latest/meta-data/instance-id"
