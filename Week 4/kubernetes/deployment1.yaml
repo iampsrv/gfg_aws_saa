@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myfirstpoddeploy
+  labels:
+    name: frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: frontend
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        name: frontend
+    spec:
+      containers:
+      - name: myfirstpodcontainer
+        image: psrv3/example:13
+        ports:
+        - containerPort: 5000

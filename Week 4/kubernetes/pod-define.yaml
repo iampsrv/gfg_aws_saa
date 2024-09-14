@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myfirstpod
+  labels:
+    name: frontend
+spec:
+  containers:
+  - name: myfirstpodcontainer
+    image: pratibhasaxena/basic_todo_app:1
+    ports:
+    - containerPort: 8081
