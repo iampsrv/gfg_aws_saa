@@ -1,0 +1,41 @@
+VPC 1 (Publicly accesible) myvpc1
+10.0.0.0/16
+Subnet: 10.0.1.0/24 mysubnet-vpc1
+IGW myigw_vpc1
+RT myrt_vpc1
+Subnet association
+Add the route for internet gateway in the route table
+SG: All traffic mysg_vpc1
+EC2 myinstance_vpc1
+
+VPC 2 (Private) myvpc2
+10.1.0.0/16
+Subnet: 10.1.1.0/24 mysubnet-vpc2
+RT myrt_vpc2
+SG: All traffic mysg_vpc2
+EC2 myinstance_vpc2
+
+VPC 3 (Private) myvpc3
+10.2.0.0/16
+Subnet: 10.2.1.0/24 mysubnet-vpc3
+RT myrt_vpc3
+SG: All traffic mysg_vpc3
+EC2 myinstance_vpc3
+
+
+
+VPC _Peering
+
+Raise Peering Request
+Accept Peering Request
+Update the route table of both the vpc
+
+Transit_Gateway
+
+Create transit gateway (ASN: 4200000000)
+Create transit gateway attachment
+VPC 1 mytga-vpc1
+VPC 2 mytga-vpc2
+VPC 3 mytga-vpc3
+
+Update the route table (Add entries of other vpc cidr)
