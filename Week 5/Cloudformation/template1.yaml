@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  EC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      ImageId: "ami-053b0d53c279acc90"  # Replace with your desired AMI ID
+      InstanceType: t2.micro  # Replace with your desired instance type
+      SecurityGroupIds:
+        - Ref: MySecurityGroup
+  MySecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: Allow inbound traffic on port 8080
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 8080
+          ToPort: 8080
+          CidrIp: 0.0.0.0/0  # Replace with your desired CIDR range
+Outputs:
+  InstanceId:
+    Value: !Ref EC2Instance

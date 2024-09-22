@@ -1,0 +1,36 @@
+{
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "Update:*",
+      "Principal": "*",
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "ResourceType": [
+            "AWS::EC2::SecurityGroup",
+            "AWS::EC2::RouteTable",
+            "AWS::EC2::InternetGateway",
+            "AWS::EC2::VPCGatewayAttachment",
+            "AWS::EC2::SubnetRouteTableAssociation"
+          ]
+        }
+      }
+    },
+    {
+      "Effect": "Deny",
+      "Action": "Update:*",
+      "Principal": "*",
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "ResourceType": [
+            "AWS::EC2::VPC",
+            "AWS::EC2::Subnet",
+            "AWS::EC2::Instance"
+          ]
+        }
+      }
+    }
+  ]
+}
