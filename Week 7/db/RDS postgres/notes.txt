@@ -1,0 +1,16 @@
+psql -h database-1.cakxb5zzw0ie.us-east-1.rds.amazonaws.com -p 5432 -U postgres -d pranjal123
+
+CREATE DATABASE database1;
+
+\c change database
+\dt list table
+SELECT * FROM items;
+INSERT INTO items (key, value) VALUES ('test_key', 'test_value');
+
+CREATE TABLE items (
+    id SERIAL PRIMARY KEY,
+    key TEXT NOT NULL,
+    value TEXT NOT NULL
+);
+
+\d table_name Describe a Table Structur
