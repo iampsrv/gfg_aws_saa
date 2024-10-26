@@ -1,0 +1,17 @@
+what is cloud computing?, Why cloud computing?, IaaS vs PaaS vs SaaS, AWS Global infrastructure, AWS Well Archited Framework, AWS Shared Responsibility Model
+IAM, Least Priviledge Principle, Root User, IAM user, IAM Roles, IAM Policies, MFA, Access Advisor, Password Policy, Accessing AWS, AWS Organisation, SCP
+
+VPC, Subnet, Internet Gateway, Route Table, Elastic IP, IP Address, Public and Private IP, Static and Dynamic IP Address, Elastic IP, IP dual Stack, CIDR, NAT Gateway, NAT Instance, Bastian Host, Security Group, NACL
+Compute Basics, Event Driven Architecture, Server and Serverless Architecture, Container, VM vs Container, AMI, Instance Type, SSH, Key Pair, EC2 node metadata, Launch Template, EC2 purchasing option, AWS calculator, Reserved vs Spot vs on demand, Lambda
+
+
+Storage Basics, Object vs Block vs File Storage, S3 bucket, S3 versioning, S3 Replication rule, Bucket policies, ACL, S3 Storage classes, S3 Lifecycle Rule, Object Lock, Static Website hosting
+S3 CORS, S3 Access Points, EFS, EBS Volume, EBS Snapshots
+
+IAM Policy Simulator, Docker, Container, Image, How Docker works?, Docker Architecture, Dockerfile, Building custom docker image, ECR, Publish docker image in ECR, Container Orchestration, ECS, ECS tasks and services, Fargate, Deploying containers into ECS and Fargate cluster
+Elastic load balancer, Auto Scaling Group, Launch template, Scaling policy, Listner Rules, AWS Disaster Recovery strategies
+
+
+
+
+
